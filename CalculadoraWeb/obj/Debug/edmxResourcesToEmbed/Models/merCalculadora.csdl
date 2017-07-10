@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbCalcModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Resultado">
+    <Key>
+      <PropertyRef Name="IdResultado" />
+    </Key>
+    <Property Name="IdResultado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Resultados" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="dbCalcEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Resultado" EntityType="Self.Resultado" />
+  </EntityContainer>
+</Schema>
